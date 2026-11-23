@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ingresar libro</title>
+  </head>
+  <body>
+    <main>
+      <h1>Ingresar un libro</h1>
+      <form action="/libros" method="post">
+        <p>
+          <label for="titulo">Título</label>
+          <input id="titulo" name="titulo" type="text" required>
+        </p>
+        <p>
+          <label for="autor">Autor</label>
+          <input id="autor" name="autor" type="text" required>
+        </p>
+        <p>
+          <label for="año">Año</label>
+          <input id="año" name="año" type="number" step="1" required>
+        </p>
+        <button type="submit">Guardar libro</button>
+      </form>
+    </main>
+  </body>
+</html>
